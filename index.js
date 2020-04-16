@@ -26,7 +26,7 @@ document.querySelectorAll("input")[11].value = ((poundsReceived+lastAmount).toFi
     document.querySelectorAll("input")[18].value = Math.ceil(amountOfBags) + " mt"
       document.querySelectorAll("input")[19].value = ((poundsReceived+lastAmount)-fullBatch).toFixed(2);
 
-  document.querySelectorAll("input")[21].value = emptyBag;
+  document.querySelectorAll("input")[21].value = Math.ceil(amountOfBags)*emptyBag;
 
   document.querySelectorAll("input")[23].value = (Number(document.querySelectorAll("input")[19].value)-emptyBag*Math.ceil(amountOfBags)).toFixed(2);
     document.querySelectorAll("input")[24].value = (Number(document.querySelectorAll("input")[19].value)-emptyBag*Math.ceil(amountOfBags)).toFixed(2);
