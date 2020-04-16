@@ -8,7 +8,7 @@ var amountBatches = Number(document.querySelectorAll("input")[3].value);
 var lastAmount = Number(document.querySelectorAll("input")[4].value);
 var fullBatch = numberBatches*amountBatches;
 var bag = Number(document.querySelectorAll("input")[0].value)+Number(document.querySelectorAll("input")[1].value);
-  var amountOfBags = (lastAmount+fullBatch)/fullBag;
+  var amountOfBags = fullBatch/fullBag;
 
 
 if(lastAmount<=fullBatch){
