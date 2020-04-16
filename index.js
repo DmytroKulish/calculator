@@ -12,7 +12,7 @@ var bag = Number(document.querySelectorAll("input")[0].value)+Number(document.qu
 
 
 if(lastAmount<=fullBatch){
- document.querySelectorAll("input")[5].value = "plus " + Math.ceil(amountOfBags) + " bags!"
+ document.querySelectorAll("input")[5].value = "+" + Math.ceil(amountOfBags) + " bags!"
  document.querySelectorAll("input")[6].value = lastAmount;
  document.querySelectorAll("input")[7].value = (Math.ceil(amountOfBags)*bag).toFixed(3);
 var poundsReceived =  Number(document.querySelectorAll("input")[7].value)

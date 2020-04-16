@@ -2,6 +2,11 @@
 body{
     background-color:#f2a365;
     padding:2%;
+
+}
+input{
+  font-size: 1.6rem;
+
 }
 .col{
   border: 1px solid black;
@@ -9,6 +14,7 @@ body{
 }
 .inputs{
   width:100px;
+  font-weight: bold;
 }
 .table{
   width:150px;
