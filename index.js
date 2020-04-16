@@ -9,27 +9,27 @@ var lastAmount = Number(document.querySelectorAll("input")[4].value);
 var fullBatch = numberBatches*amountBatches;
 var bag = Number(document.querySelectorAll("input")[0].value)+Number(document.querySelectorAll("input")[1].value);
   var amountOfBags = (lastAmount+fullBatch)/fullBag;
-console.log(fullBatch);
+
 
 if(lastAmount<=fullBatch){
  document.querySelectorAll("input")[5].value = "plus " + Math.ceil(amountOfBags) + " bags!"
  document.querySelectorAll("input")[6].value = lastAmount;
- document.querySelectorAll("input")[7].value = bag;
-
- document.querySelectorAll("input")[10].value = ((bag+lastAmount).toFixed(3));
- document.querySelectorAll("input")[11].value = ((bag+lastAmount).toFixed(3));
- document.querySelectorAll("input")[12].value = ((bag+lastAmount).toFixed(3));
+ document.querySelectorAll("input")[7].value = (Math.ceil(amountOfBags)*bag).toFixed(3);
+var poundsReceived =  Number(document.querySelectorAll("input")[7].value)
+ document.querySelectorAll("input")[10].value = ((poundsReceived+lastAmount).toFixed(3));
+document.querySelectorAll("input")[11].value = ((poundsReceived+lastAmount).toFixed(3));
+ document.querySelectorAll("input")[12].value = ((poundsReceived+lastAmount).toFixed(3));
  document.querySelectorAll("input")[14].value = fullBatch.toFixed(3);
   document.querySelectorAll("input")[15].value = numberBatches;
-  document.querySelectorAll("input")[16].value = (bag+lastAmount)-fullBatch;
-    document.querySelectorAll("input")[17].value = (bag+lastAmount)-fullBatch;
+  document.querySelectorAll("input")[16].value = ((poundsReceived+lastAmount)-fullBatch).toFixed(3);
+    document.querySelectorAll("input")[17].value = ((poundsReceived+lastAmount)-fullBatch).toFixed(3);
     document.querySelectorAll("input")[18].value = Math.ceil(amountOfBags) + " mt"
-      document.querySelectorAll("input")[19].value = (bag+lastAmount)-fullBatch;
+      document.querySelectorAll("input")[19].value = ((poundsReceived+lastAmount)-fullBatch).toFixed(3);
 
   document.querySelectorAll("input")[21].value = emptyBag;
 
-  document.querySelectorAll("input")[23].value = (Number(document.querySelectorAll("input")[19].value)-emptyBag).toFixed(3);
-    document.querySelectorAll("input")[24].value = (Number(document.querySelectorAll("input")[19].value)-emptyBag).toFixed(3);
+  document.querySelectorAll("input")[23].value = (Number(document.querySelectorAll("input")[19].value)-emptyBag*Math.ceil(amountOfBags)).toFixed(3);
+    document.querySelectorAll("input")[24].value = (Number(document.querySelectorAll("input")[19].value)-emptyBag*Math.ceil(amountOfBags)).toFixed(3);
 
 
 
