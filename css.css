@@ -1,0 +1,21 @@
+
+body{
+    background-color:#f2a365;
+    padding:2%;
+}
+.col{
+  border: 1px solid black;
+  text-align: center;
+}
+.inputs{
+  width:100px;
+}
+.table{
+  width:150px;
+border:2px solid #2c003e;
+text-align: center;
+height:45px;
+}
+.col{
+  width:200px;
+}
