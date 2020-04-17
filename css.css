@@ -16,6 +16,7 @@ input{
 .inputs{
   width:80px;
   font-weight: bold;
+  background-color: white;
 }
 .table{
   width:150px;
