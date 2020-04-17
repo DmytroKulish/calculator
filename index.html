@@ -16,8 +16,28 @@
       <tr>
         <th scope="col">Empty bag #</th>
         <th scope="col">Full bag #</th>
-        <th scope="col">№Bathes</th>
+        <th scope="col">№Batсhes</th>
         <th scope="col"># Per batch</th>
+          <th scope="col">LAST BALANCE</th>
+        <th scope="col"><div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle buttonCSS" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Skycis
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Skycis</button>
+    <button class="dropdown-item" type="button">Flavomicyn</button>
+    <button class="dropdown-item" type="button">Kavault</button>
+    <button class="dropdown-item" type="button">CTC-100</button>
+    <button class="dropdown-item" type="button">Denagard</button>
+    <button class="dropdown-item" type="button">Linco</button>
+    <button class="dropdown-item" type="button">BMD-50</button>
+    <button class="dropdown-item" type="button">OTC</button>
+    <button class="dropdown-item" type="button">Mecadox</button>
+    <button class="dropdown-item" type="button">Pulmotil</button>
+    <button class="dropdown-item" type="button">Tilmovet</button>
+  </div>
+</div>
+</div></th>
       </tr>
     </thead>
     <tbody>
@@ -27,12 +47,17 @@
         <td><input class="inputs" type="number" name="" value="55"></td>
         <td><input class="inputs" type="number" name="" value="6"></td>
         <td><input class="inputs" type="number" name="" value="1.2"></td>
-          <td><button type="button" class="btn btn-secondary btn-lg">Calculate</button></td>
+          <td class="table"><input class="inputs" type="text" name="" value="VALUE" onfocus="this.value=''"></td>
+          <td><button id="calculateButton" type="button" class="btn btn-secondary btn-lg">Calculate</button></td>
+            <td><button id="refreshButton" type="button" class="btn btn-secondary btn-lg">REFRESH</button></td>
+
       </tr>
 
 <table class="table">
   <thead class="thead-dark">
-    <td class="table">PRODUCT DESCRIPTION</td>
+      <td class="table">DATE</td>
+        <td class="table">TRACKING NO.</td>
+      <td class="table">PRODUCT DESCRIPTION</td>
   <td class="table">BEGINNING BALANCE</td>
   <td class="table">POUNDS RECV'D IN</td>
   <td class="table">POUNDS OUT</td>
@@ -41,14 +66,20 @@
   <td class="table">ACTUCAL BALANCE</td>
    </thead>
   <tr>
-  <td class="table"></td>
+
+  <!-- <td class="table"></td>
+
+    <td class="table"></td>
+    <td class="table"></td>
     <td class="table"></td>
   <td class="table"></td>
   <td class="table"></td>
   <td class="table"></td>
   <td class="table"></td>
   <td class="table"><input class="inputs" type="text" name="" value="VALUE" onfocus="this.value=''"></td>
-  <tr>
+  <tr> -->
+    <td class="table">DATE</td>
+    <td class="table"></td>
   <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
   <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
   <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
@@ -58,7 +89,9 @@
     <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
   </tr>
   <tr>
-  <td class="table"></td>
+    <td class="table">DATE</td>
+    <td class="table">ORDER №</td>
+  <td class="table">CUST NAME</td>
   <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
     <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
   <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
@@ -67,6 +100,8 @@
       <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
   </tr>
   <tr>
+    <td class="table">DATE</td>
+    <td class="table"></td>
 <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
   <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>
     <td class="table"><input class="inputs" type="text" name="" value="" disabled></td>

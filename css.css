@@ -13,7 +13,7 @@ input{
   text-align: center;
 }
 .inputs{
-  width:100px;
+  width:80px;
   font-weight: bold;
 }
 .table{
@@ -24,4 +24,7 @@ height:45px;
 }
 .col{
   width:200px;
+}
+.buttonCSS{
+  width:115px;
 }
