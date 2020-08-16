@@ -12,7 +12,11 @@ var amountOfBags = (fullBatch-lastAmount)/fullBag;
 
 
 if(lastAmount<=fullBatch){
- document.querySelectorAll("input")[5].value = "+" + Math.ceil(amountOfBags) + "bags"
+ if(amountOfBags > 1){
+   document.querySelectorAll("input")[5].value = "+" + Math.ceil(amountOfBags) + "bags"
+ }else{
+     document.querySelectorAll("input")[5].value = "+" + Math.ceil(amountOfBags) + "bag"
+ }
  document.querySelectorAll("input")[6].value = lastAmount;
  document.querySelectorAll("input")[7].value = (Math.ceil(amountOfBags)*bag).toFixed(2);
 var poundsReceived =  Number(document.querySelectorAll("input")[7].value)
